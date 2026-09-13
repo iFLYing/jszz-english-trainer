@@ -23,8 +23,8 @@
    - Region 选 **AWS / Singapore (ap-southeast-1)**（离国内近、延迟低）
    - 点 **Create**
 3. 创建后自动进入 Dashboard。在左侧或顶部找到 **Connection Details**（连接详情）。
-4. **关键**：把连接方式切换为 **Direct connection**（直连）。
-   > ⚠️ 不要选 Pooled connection（连接池）。本项目用 `pg` 直连，pooled 的 URI 带 `pooler` 会导致 serverless 断连报错。
+4. 选择连接方式：**Direct connection（直连）或 Pooled connection（连接池）均可**。
+   > 本项目后端用 `pg` 的 `new Pool()` 跑简单查询，已在真实环境实测 **Pooled 连接（主机名带 `-pooler`）在 Render 常驻进程下完全可用**。你若复制到的 URI 带 `-pooler` 直接用它即可；想延迟更低可选 Direct。两种都能正常建表、写入与同步。
 5. 复制那一整行以 `postgresql://` 开头的 URI（里面含用户名、密码、库名，结尾是 `?sslmode=require`）。
    - 示例形态：`postgresql://user:password@ep-xxx.ap-southeast-1.aws.neon.tech/neondb?sslmode=require`
    - 把它存到记事本，第 2 步要用。
