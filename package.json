@@ -1,0 +1,12 @@
+{
+  "name": "jszz-english-trainer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "江苏省职教高考英语科目专项 · 云端多端实时同步训练系统",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.12.0"
+  }
+}

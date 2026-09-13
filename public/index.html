@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>江苏省职教高考英语科目专项</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">JS</span>
+      <div>
+        <h1>江苏省职教高考 · 英语专项</h1>
+        <p class="sub">真题模拟 · 五维标签 · 专项训练 · 云端同步</p>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-mode="home">首页</button>
+      <button class="tab" data-mode="mock">整卷模考</button>
+      <button class="tab" data-mode="practice">专项训练</button>
+      <button class="tab" data-mode="vocab">词汇语法</button>
+      <button class="tab" data-mode="wrong">错题本 <span id="wrongCount" class="badge" style="display:none">0</span></button>
+      <button class="tab" data-mode="scores">成绩</button>
+      <button class="tab" data-mode="profile">我的</button>
+    </nav>
+    <div class="auth" id="authArea"></div>
+  </header>
+
+  <!-- 登录 / 注册弹窗 -->
+  <div id="authModal" class="modal-mask" style="display:none">
+    <div class="modal">
+      <h2 id="authTitle">登录账号</h2>
+      <div class="seg">
+        <button class="seg-btn active" data-auth="login">登录</button>
+        <button class="seg-btn" data-auth="reg">注册</button>
+      </div>
+      <input id="authUser" class="auth-input" placeholder="用户名" autocomplete="username" />
+      <input id="authPw" class="auth-input" type="password" placeholder="密码（至少 3 位）" autocomplete="current-password" />
+      <button class="btn wide" id="authSubmit">登录</button>
+      <button class="btn ghost wide" id="authCancel">取消</button>
+      <p class="muted" style="font-size:12px;text-align:center;margin:6px 0 0">
+        账号与错题、成绩云端保存，多端实时同步（已接入职教高考英语专项云端）。
+      </p>
+    </div>
+  </div>
+
+  <div id="wechatTip" class="wechat-tip" style="display:none">微信内打开：点击右上角 ··· 选择「在浏览器打开」体验更佳</div>
+
+  <main id="app" class="container"><!-- 动态渲染 --></main>
+
+  <footer class="site-foot">
+    <span class="foot-by">江苏省职教高考英语专项 · 云端版</span>
+    <span class="foot-sep">·</span>
+    <a href="javascript:void(0)" id="adminEntry" class="foot-admin">管理后台</a>
+  </footer>
+
+  <div id="adminOverlay" class="modal-mask" style="display:none">
+    <div class="modal wide admin-panel" id="adminPanel"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
