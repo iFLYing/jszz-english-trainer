@@ -79,7 +79,7 @@ export const extraQuestions = [
 
 // ---- 第 1 套 ----
 const p1 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（一）', year: '2025', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（一）', year: '2025', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: 'We ______ a school trip next week.', o: ['have', 'had', 'will have', 'has'], a: 'will have', k: '时态语态', kp: '一般将来时', t: '校园生活', an: 'next week 用一般将来时 will have。' }),
@@ -147,7 +147,7 @@ const p1 = {
 
 // ---- 第 2 套 ----
 const p2 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（二）', year: '2025', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（二）', year: '2025', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: 'By the time we got there, the bus ______.', o: ['left', 'has left', 'had left', 'leaves'], a: 'had left', k: '时态语态', kp: '过去完成时', t: '社会生活', an: 'got 是过去时，离开在此之前，用过去完成时。' }),
@@ -215,7 +215,7 @@ const p2 = {
 
 // ---- 第 3 套 ----
 const p3 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（三）', year: '2024', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（三）', year: '2024', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: '______ beautiful the sunset is!', o: ['What', 'What a', 'How', 'How a'], a: 'How', k: '感叹句', kp: 'How + adj.', t: '社会生活', an: 'How + 形容词 + 主语 + 谓语！' }),
@@ -283,7 +283,7 @@ const p3 = {
 
 // ---- 第 4 套 ----
 const p4 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（四）', year: '2024', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（四）', year: '2024', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: 'The teacher ______ the students are talking is very kind.', o: ['who', 'which', 'to whom', 'to who'], a: 'to whom', k: '定语从句', kp: '介词+关系代词', t: '校园生活', an: 'talk to sb.，介词 to 提前，指人用 whom。' }),
@@ -316,7 +316,7 @@ const p4 = {
     })()},
     { type: '补全对话', prompt: '从选项中选出合适的句子补全对话。', qs: [
       dialog({ s: 'A: What’s wrong with you?  B: ______', o: ['I have a headache.', 'I am fine.', 'It is sunny.', 'I like apples.'], a: 'I have a headache.', k: '日常交际', kp: '就医', t: '校园生活', an: '问病情回答不适。' }),
-      dialog({ s: 'A: Excuse me, where is the library?  B: ______', o: ['It’s next to the hospital.', 'I am busy.', 'Thank you.', 'See you.'], a: 'It’s next to the hospital.', k: '日常交际', kp: '问路', t: '社会生活', an: '问路给方位。' }),
+      dialog({ s: 'A: Excuse me, is there a bank near here?  B: ______', o: ['Yes, it is just behind the school.', 'Yes, I am.', 'No, thanks.', 'You are welcome.'], a: 'Yes, it is just behind the school.', k: '日常交际', kp: '问路', t: '社会生活', an: '询问附近是否有银行，应答给出方位。' }),
       dialog({ s: 'A: Happy birthday!  B: ______', o: ['The same to you.', 'Thank you!', 'I am 18.', 'No, thanks.'], a: 'Thank you!', k: '日常交际', kp: '祝贺应答', t: '人际交往', an: '对生日祝福应答感谢。' }),
       dialog({ s: 'A: Shall we go to the movies?  B: ______', o: ['Yes, I’d love to.', 'I am a student.', 'It is far.', 'No, I can’t sing.'], a: 'Yes, I’d love to.', k: '日常交际', kp: '邀请应答', t: '校园生活', an: '对邀请的肯定应答。' }),
     ]},
@@ -351,7 +351,7 @@ const p4 = {
 
 // ---- 第 5 套 ----
 const p5 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（五）', year: '2023', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（五）', year: '2023', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: 'He suggested ______ a meeting to discuss the plan.', o: ['have', 'to have', 'having', 'had'], a: 'having', k: '非谓语动词', kp: 'suggest doing', t: '校园生活', an: 'suggest doing sth. 建议做。' }),
@@ -419,7 +419,7 @@ const p5 = {
 
 // ---- 第 6 套 ----
 const p6 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（六）', year: '2023', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（六）', year: '2023', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: '______ you told him the truth, he would be angry.', o: ['If', 'Unless', 'Because', 'Although'], a: 'If', k: '状语从句', kp: 'if 条件句', t: '人际交往', an: '如果告诉他真相，他会生气。' }),
@@ -487,13 +487,13 @@ const p6 = {
 
 // ---- 第 7 套 ----
 const p7 = {
-  id: uid(), title: '2023-2025 真题仿真模拟卷（七）', year: '2024', kind: '模拟', duration: 120,
+  id: uid(), title: '真题仿真模拟卷（七）', year: '2024', kind: '模拟', duration: 120,
   sections: [
     { type: '单项选择', prompt: '从 A、B、C、D 四个选项中选出最佳答案。', qs: [
       mcq({ s: 'The teacher asked us ______ noise in the library.', o: ['not make', 'not to make', 'to not make', 'don’t make'], a: 'not to make', k: '非谓语动词', kp: 'ask sb. not to do', t: '校园生活', an: 'ask sb. not to do sth.。' }),
       mcq({ s: '______ he is young, he knows a lot.', o: ['Although', 'Because', 'If', 'Unless'], a: 'Although', k: '状语从句', kp: 'although 让步', t: '学习态度', an: '尽管年轻，懂得多，让步。' }),
       mcq({ s: 'This is the village ______ I was born.', o: ['which', 'that', 'where', 'what'], a: 'where', k: '定语从句', kp: '关系副词 where', t: '社会生活', an: '先行词 village 表地点，用 where。' }),
-      mcq({ s: 'If it ______ tomorrow, we will stay at home.', o: ['rains', 'will rain', 'rained', 'is raining'], a: 'rains', k: '状语从句', kp: '主将从现', t: '社会生活', an: 'if 条件句表将来，从句用一般现在时。' }),
+      mcq({ s: 'Tom is ______ of the two boys.', o: ['taller', 'the taller', 'tallest', 'the tallest'], a: 'the taller', k: '比较等级', kp: '两者中较……的一个', t: '校园生活', an: '表示“两者中较……的一个”，比较级前加 the。' }),
       mcq({ s: 'The dictionary ______ on the desk is mine.', o: ['laying', 'lying', 'laid', 'lain'], a: 'lying', k: '非谓语动词', kp: '现在分词作定语', t: '阅读习惯', an: 'dictionary 与 lie（平放）主动，用现在分词 lying。' }),
       mcq({ s: 'He runs ______ than any other student in his class.', o: ['fast', 'faster', 'fastest', 'the faster'], a: 'faster', k: '副词比较级', kp: 'than 比较级', t: '校园生活', an: 'than 提示比较级 faster。' }),
       mcq({ s: 'There is ______ water in the glass. Please give me some.', o: ['little', 'a little', 'few', 'a few'], a: 'little', k: '代词辨析', kp: 'little/a little', t: '社会生活', an: 'water 不可数，且要一些说明“几乎没有”，用 little。' }),
